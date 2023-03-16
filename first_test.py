@@ -46,11 +46,9 @@ def shortener(string):
 
     """
     list_str = string.split()
-    iter1 = 0
-    for i in list_str:
+    for c, i in enumerate(list_str):
         if len(i) > 6:
-            list_str[iter1] = i[:6] + "*"
-        iter1 += 1
+            list_str[c] = i[:6] + "*"
     string = ' '.join(list_str)
     return string
     #  ...wite your code here
